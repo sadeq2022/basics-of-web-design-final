@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurslar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="history.html">TARİHÇE</a></li>
+                    <li><a href="course.html">KURSLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="signin.html">GİRİŞ</a></li>
+                    <li><a href="signup.html">HESAP OLUŞTUR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+       <h1>Kurslarımız</h1>
+
+    </section>
+
+
+    <!-------Kurslar------>
+    <section class="kurslar">
+        <h1>Önerdiğimiz Kurslar</h1>
+        <p>Eduford Üniversitesi,antropoloji, psikoloji, politik bilimler, ekonomi, siyaset bilimi ve sosyoloji dersleri veren güçlü sosyal bilim programları ile tanınır.</p>
+        <div class="row">
+        <div class="kurslar-col">
+            <h3>Orta Seviye</h3>
+            <p>Orta Düzey Kurslar, bir konuda temel düzeyde bilgi edinmiş ve bilgilerini daha ileri düzeye taşımak isteyen bireyler için tasarlanmış eğitim programlarıdır. Bu kurslar işletme, teknoloji ve sanat gibi çeşitli alanlarda bulunabilir. Genellikle başlangıç ​​seviyesindeki kurslarda tanıtılan temel kavramlar üzerine inşa edilirler ve daha karmaşık fikirler ve teknikler sunarlar.</p>
+            
+        </div>
+        <div class="kurslar-col">
+            <h3>Derece</h3>
+            <p>Derece kursları, tipik olarak tamamlanması birkaç yıl süren ve öğrencilere belirli bir konu alanında derinlemesine bilgi ve uzmanlık sağlamak için tasarlanmış eğitim programlarıdır. Bu kurslar genellikle kolejlerde ve üniversitelerde sunulur ve eğitim düzeyine bağlı olarak bir önlisans derecesi, lisans derecesi, yüksek lisans derecesi veya doktora derecesi ile sonuçlanabilir.</p>
+            
+        </div>
+        <div class="kurslar-col">
+            <h3>Mezuniyet Sonrası</h3>
+            <p>Lisansüstü programlar, halihazırda bir lisans derecesini tamamlamış kişiler için tasarlanmış yüksek öğretim programlarıdır. Bu kurslar işletme, teknoloji ve sanat gibi çeşitli alanlarda bulunabilir ve genellikle lisans programlarından daha ileri ve uzmanlaşmıştır.</p>
+        </div>
+        </div>
+    </section>
+
+    <!------Facilities------>
+
+    <section class="facilities">
+        <h1>Tesislerimiz</h1>
+        <p>Kütüphaneler, Müzeler, Parklar ve bahçeler, Tiyatrolar ve konser salonları ve Spor tesisleri</p>
+
+            <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>Dünya Standartlarında Kütüphane</h3>
+                <p>Bizim kütüphanemizde bulunmayacak kitap yoktur. 5000 farklı kategoriler.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Spor Sahalarımız</h3>
+                <p>En büyük spor salonları ve ekipmanları da bizde.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Kafelerimiz</h3>
+                <p>Eğlenmek ve rahatlamak için en iyi kafeler.</p>
+            </div>
+            </div>
+
+    </section>
+
+
+
+    
+    <!-------Footer------>
+
+    <section class="footer">
+        <h4>Hakkımızda</h4>
+        <p>Eduford'un 180'dan fazla ülkeden öğrencisi vardır. Üniversite, güçlü akademik programları ve seçkin öğretim kadrosuyla tanınmaktadır<br>entelektüel ve kültürel faaliyetlerin merkezi olmasıyla ünlüdür. NYU, sanat, bilim, işletme,<br>hukuk ve eğitim dahil olmak üzere çeşitli alanlarda çok çeşitli lisans, yüksek lisans ve profesyonel programlar sunmaktadır.</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p><i class="fa-regular fa-heart"></i>Sevgiler ve saygılar hocam<i class="fa-regular fa-heart"></i></p>
+    </section>
+    <!------------JavaScript for menu-------------> 
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

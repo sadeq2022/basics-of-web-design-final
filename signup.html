@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Oluşturma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="history.html">TARİHÇE</a></li>
+                    <li><a href="course.html">KURSLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="signin.html">GİRİŞ</a></li>
+                    <li><a href="signup.html">HESAP OLUŞTUR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+        </nav>
+        <div class="signup-box">
+          <h1>Hesap Oluşturma</h1>
+          <h4>Ücretsizdir ve 1 dakikanızı bile almaz</h4>
+          <form>
+            <label>İsim</label>
+            <input type="text" placeholder="isminiz" />
+            <label>Soyisim</label>
+            <input type="text" placeholder="soyisimiz" />
+            <label>E-Posta</label>
+            <input type="email" placeholder="eposta@mail.com" />
+            <label>Şifre</label>
+            <input type="password" placeholder="********" />
+            <label>Şifreyi Onayla</label>
+            <input type="password" placeholder="********" />
+            <input type="button" onclick="alert('Hesabı Onaylamak İçin E-postanıza Bakın')" value="Oluştur" />
+          <closeform></closeform></form>
+          <p>
+            Kaydol düğmesine tıklayarak,Şartlar ve koşullar <br />
+            <a href="acceptterms.html" target="_blank">kabul etmiş olursunuz</a> ve <a href="privacypolicy.html" target="_blank">Gizlilik Politikası</a>
+          </p>
+        </div>
+        <p class="para-2">
+          Zaten Hesabınız var mı? <a href="signin.html">Buradan Giriş Yap</a>
+        </p>
+
+        
+    <!------------JavaScript for menu-------------> 
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

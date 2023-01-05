@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarihçe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="about.html">HAKKIMIZDA</a></li>
+                    <li><a href="history.html">TARİHÇE</a></li>
+                    <li><a href="course.html">KURSLAR</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">İLETİŞİM</a></li>
+                    <li><a href="signin.html">GİRİŞ</a></li>
+                    <li><a href="signup.html">HESAP OLUŞTUR</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Tarihçe</h1>
+
+    </section>
+
+    <!--------History content-------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Biz Dünyanın En Büyük Üniversitesiyiz</h1>
+                <p>17 Mayıs 1740 tarihinde Mikel George tarafından kuruldu. 500 yıllık bir tarihe dayanan coğrafyada; içinde çeşitli dil, din ve kültürel zenginlikleri barındıran New York şehri ve çevresinin sosyal ve kültürel ortamına katkı sunarak, ABD’de bulunan Üniversiteler arasında en eski üniversitedir.
+                    Mevcut olan bölümlerimizin hepsi okulun kuruluşundan beri mevcuttu.
+                    Ülkenin birçok başarılı insanları bizim okuldan mezun olmuşlardır.
+                    Kurulduğunda sadece bir şehirde bulunan okulumuz yıllarca çaba gösterip, günümüzde 3 büyük şehire şube açmayı başarmıştır.
+                    Eduford'un 180'dan fazla ülkeden öğrencisi vardır
+                    </p>
+                <a href="A" class="visit-btn red-btn">Şimdi Keşfet</a>
+            </div>
+            <div class="about-col">
+                <img src="images/history.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <!-------Footer------>
+
+    <section class="footer">
+        <h4>Hakkımızda</h4>
+        <p>Eduford'un 180'dan fazla ülkeden öğrencisi vardır. Üniversite, güçlü akademik programları ve seçkin öğretim kadrosuyla tanınmaktadır<br>entelektüel ve kültürel faaliyetlerin merkezi olmasıyla ünlüdür. NYU, sanat, bilim, işletme,<br>hukuk ve eğitim dahil olmak üzere çeşitli alanlarda çok çeşitli lisans, yüksek lisans ve profesyonel programlar sunmaktadır.</p>
+        <div class="icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p><i class="fa-regular fa-heart"></i>Sevgiler ve saygılar hocam<i class="fa-regular fa-heart"></i></p>
+    </section>
+    <!------------JavaScript for menu-------------> 
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
